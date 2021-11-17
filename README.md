@@ -4,10 +4,8 @@ Loadouts aims to be the place for people to organize, filter, find, and share th
 
 ## Status 
 
-Current status: limited functionality. UI works but JSON datastore functions need updated. 
+Current status: limited functionality. UI mostly works but JSON datastore functions need updated. Haven't made much of the site dynamic.  
 
-## Disclaimers for potential employers reading this
-I know this repo is too big and I need to make better use of npm / my package.JSON. 
 
 ## Building: 
 Requires npm. (assumes linux)
