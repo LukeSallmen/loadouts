@@ -1,36 +1,29 @@
-# ASSIGNMENT NAME
+# Loadouts
 
-FINAL PROJECT
+Loadouts aims to be the place for people to organize, filter, find, and share their gear setups with the world.
 
-## Name: 
+## Status 
 
-Luke Sallmen
+Current status: limited functionality. UI works but JSON datastore functions need updated. 
 
-### Timeline
+## Disclaimers for potential employers reading this
+I know this repo is too big and I need to make better use of npm / my package.JSON. 
 
-Start Date: 3/21/2021
+## Building: 
+Requires npm. (assumes linux)
 
-Finish Date: 4/29/2021
+In the directory / folder of your choice, run:
+git clone https://github.com/LukeSallmen/loadouts.git
 
-Hours Spent: 110
+Then, to install the required dependencies: 
+npm install
 
+To start the server:
+cd src/loadouts_server
+nodemon server.js
 
-### Collaboration
+To start the UI:
+cd ../loadouts_ui
+vue-cli-service serve
 
-People consulted:
-
-Resources used: Vuejs.org, Bootstrap-Vue.org
-
-Asset attributions: N/a, everything is MIT / needs no attribution
-
-
-### Assignment Notes
-
-Known Bugs: 
-Users / Oauth / Firebase not implemeted
-Didn't get to do user testing because I was getting server / UI working per Professor Duvall's piazza comment.
-
-Extra credit:
-
-
-### Impressions
+## 
