@@ -11,17 +11,26 @@ Current status: limited functionality. UI mostly works but JSON datastore functi
 Requires npm. (assumes linux)
 
 In the directory / folder of your choice, run:
+```
 git clone https://github.com/LukeSallmen/loadouts.git
+```
 
 Then, to install the required dependencies: 
+
+```
 npm install
+```
 
 To start the server:
+
+```
 cd src/loadouts_server
 nodemon server.js
+```
 
 To start the UI:
+
+```
 cd ../loadouts_ui
 vue-cli-service serve
-
-## 
+```
