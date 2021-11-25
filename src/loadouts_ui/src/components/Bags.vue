@@ -45,8 +45,8 @@
           Add to List
   </b-button>
       </template>
-      <!-- todo: figure out #cell(material)="items" scoped slots -->
-      <template >
+      <!-- todo: figure out  scoped slots -->
+      <template #cell(items)="">
         <b>{{ gearData.data[1].bags.material[0] }}</b>, <b>{{ material[1] }}</b>
       </template>
 
@@ -93,14 +93,15 @@ methods: {
         this.totalRows = filteredItems.length
         this.currentPage = 1
       },
-      addToList(item, brand, type) {
+      addToList(item, brand, capacity, type, weight) {
         console.log('made it?');
-        this.gearData.data[1].bags.push({ item: item, brand: brand, capacity: 25, type: type, weight: 4.3},);
+        this.gearData.data[1].bags.push({ item: item, brand: brand, capacity: capacity, type: type, weight: weight},);
         this.toAdd.item = item;
         this.toAdd.brand = brand;
         this.toAdd.type = type;
+        this.toAdd.capacity = capacity;
+        this.toAdd.weight = weight; 
         this.gearData.data[0].luke.lists[0].elements.push(this.toAdd);
-        // this.gearData.data[0].luke.lists[0].elements.push(this.gearData.data[1].bags[0]);
       }
     },
      mounted () {

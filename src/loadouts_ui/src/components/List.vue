@@ -64,7 +64,9 @@ import { loadoutsData } from '../data/LoadoutsData.js'
           {key: 'item', sortable: false},
           { key: 'brand', sortable: true },
           { key: 'type', sortable: true },
-          // { key: 'buy', sortable: true },
+          { key: 'capacity', sortable: true },
+          { key: 'weight', sortable: true },
+
         ],
         filter: null,
         filterOn: [],
